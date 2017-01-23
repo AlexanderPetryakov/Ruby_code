@@ -1,27 +1,6 @@
 <h1>Изменить маршрут</h1>
 
-<%= form_for(@route) do |f| %>
-  <% if @route.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@route.errors.count, "error") %> prohibited this route from being saved:</h2>
+<%= render 'form' %>
 
-      <ul>
-      <% @route.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit 'Изменить' %>
-  </div>
-<% end %>
-
-
-<%= link_to 'Назад', routes_path %>
+<%= link_to 'Показать', @route %> 
+<%= link_to 'Назад к списку маршрутов', routes_path %>
