@@ -22,5 +22,17 @@
 	<% end %>
 </p>
 
+<% if @train.wagons.empty? %>
+  <p>В составе поезда нет вагонов.</p>
+<% else %>
+  <p>
+  	<strong>В составе поезда:</strong>
+  </p>
+  <ul>
+    Общее воличество вагонов: <%= @train.wagons.size %>
+  </ul>
+
+<% end %>
+
 <%= link_to 'Редактировать', edit_train_path(@train) %> |
 <%= link_to 'Назад к списку поездов', trains_path %>

@@ -17,6 +17,11 @@
   <%= f.text_field :up_seat_num %>
   </div>
 
+  <div class="filed">
+    <%= f.label :train, "В составе поезда" %>
+    <%= f.collection_select :train_id, Train.all, :id, :number %>
+  </div>
+
   <div class="actions">
     <%= f.submit "#{ @wagon.new_record? ? 'Создать' : 'Изменить' }" %>
   </div>

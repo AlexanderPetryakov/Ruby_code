@@ -15,5 +15,14 @@
   <%= @wagon.up_seat_num %>
 </p>
 
+<p>
+	<strong>В составе поезда:</strong>
+	<% if @wagon.train.present? %>
+		<%= @wagon.train.number %>
+	<% else %>
+		Не включен в состав поезда.
+	<% end %>
+</p>
+
 <%= link_to 'Редактировать', edit_wagon_path(@wagon) %> |
 <%= link_to 'Назад к списку вагонов', wagons_path %>
