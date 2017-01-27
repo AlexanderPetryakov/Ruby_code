@@ -1,12 +1,12 @@
 class WagonsController < ApplicationController
   before_action :set_wagon, only: [:show, :edit, :update, :destroy]
 
-	def index
+  def index
     @wagons = Wagon.all
-	end
+  end
 
-	def show
-	end
+  def show
+  end
 
   def new
     @wagon = Wagon.new
