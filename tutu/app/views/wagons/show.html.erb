@@ -16,12 +16,12 @@
 </p>
 
 <p>
-	<strong>В составе поезда:</strong>
-	<% if @wagon.train.present? %>
-		<%= @wagon.train.number %>
-	<% else %>
-		Не включен в состав поезда.
-	<% end %>
+  <strong>В составе поезда:</strong>
+  <% if @wagon.train.present? %>
+    <%= @wagon.train.number %>
+  <% else %>
+    Не включен в состав поезда.
+  <% end %>
 </p>
 
 <%= link_to 'Редактировать', edit_wagon_path(@wagon) %> |
