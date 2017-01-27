@@ -22,17 +22,42 @@
 	<% end %>
 </p>
 
+<p>
 <% if @train.wagons.empty? %>
-  <p>В составе поезда нет вагонов.</p>
+  В составе поезда нет вагонов.
 <% else %>
-  <p>
-  	<strong>В составе поезда:</strong>
-  </p>
+  <% kup_count = 0 %>
+  <% up_seat_kup_count = 0 %>
+  <% low_seat_kup_count = 0 %>
+  <% plz_count = 0 %>
+  <% up_seat_plz_count = 0 %>
+  <% low_seat_plz_count = 0 %>
+  
+  <% @train.wagons.each do |wagon| %>
+  	<% if wagon.car_type == "Купейный" %>
+  		<% kup_count += 1 %>
+  		<% up_seat_kup_count += wagon.up_seat_num %>
+  		<% low_seat_kup_count += wagon.low_seat_num %>
+  	<% else %>
+  		<% plz_count += 1 %>
+  		<% up_seat_plz_count += wagon.up_seat_num %>
+  		<% low_seat_plz_count += wagon.low_seat_num %>
+  	<% end %>
+  <% end %>
+
   <ul>
-    Общее воличество вагонов: <%= @train.wagons.size %>
+  <strong>В составе поезда: </strong>
+  купейных вагонов: <%= kup_count %>, 
+  плацкартных вагонов: <%= plz_count %>.
   </ul>
 
+  <ul>
+  <strong>Мест: </strong>
+  плацкартных верхних/нижних: <%= up_seat_plz_count %>/<%= low_seat_plz_count %>, 
+  купейных верхних/нижних: <%= up_seat_kup_count %>/<%= low_seat_kup_count %>.
+  </ul>
 <% end %>
+</p>
 
 <%= link_to 'Редактировать', edit_train_path(@train) %> |
 <%= link_to 'Назад к списку поездов', trains_path %>
