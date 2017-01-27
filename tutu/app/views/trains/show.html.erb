@@ -35,13 +35,13 @@
   
   <% @train.wagons.each do |wagon| %>
     <% if wagon.car_type == "Купейный" %>
-  	  <% kup_count += 1 %>
-  	  <% up_seat_kup_count += wagon.up_seat_num %>
-  	  <% low_seat_kup_count += wagon.low_seat_num %>
+      <% kup_count += 1 %>
+      <% up_seat_kup_count += wagon.up_seat_num %>
+      <% low_seat_kup_count += wagon.low_seat_num %>
     <% else %>
-  	  <% plz_count += 1 %>
-  	  <% up_seat_plz_count += wagon.up_seat_num %>
-  	  <% low_seat_plz_count += wagon.low_seat_num %>
+      <% plz_count += 1 %>
+      <% up_seat_plz_count += wagon.up_seat_num %>
+      <% low_seat_plz_count += wagon.low_seat_num %>
     <% end %>
   <% end %>
 
