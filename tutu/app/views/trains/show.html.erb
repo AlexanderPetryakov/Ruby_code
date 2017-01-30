@@ -30,14 +30,14 @@
   
   <p>
   <strong>В составе поезда: </strong>
-  купейных вагонов: <%= @train.kup_count %>, 
-  плацкартных вагонов: <%= @train.plz_count %>.
+  купейных вагонов: <%= @train.wagon_count("Купейный") %>, 
+  плацкартных вагонов: <%= @train.wagon_count("Плацкартный") %>.
   </p>
 
   <p>
   <strong>Мест: </strong>
-  плацкартных верхних/нижних: <%= @train.up_seat_plz_count %>/<%= @train.low_seat_plz_count %>, 
-  купейных верхних/нижних: <%= @train.up_seat_kup_count %>/<%= @train.low_seat_kup_count %>.
+  плацкартных верхних/нижних: <%= @train.seat_count("Плацкартный", "верхние") %>/<%= @train.seat_count("Плацкартный", "нижние") %>, 
+  купейных верхних/нижних: <%= @train.seat_count("Купейный", "верхние") %>/<%= @train.seat_count("Купейный", "нижние") %>.
   </p>
 <% end %>
 

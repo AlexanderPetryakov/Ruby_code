@@ -7,52 +7,26 @@ class Train < ApplicationRecord
 
   validates :number, presence: true
 
-  def kup_count
-    kup_count = 0
+  def wagon_count(car_type)
+    counter = 0
     self.wagons.each do |wagon|
-      kup_count += 1 if wagon.car_type == "Купейный"
+      counter += 1 if wagon.car_type == car_type
     end
-    kup_count
+    counter
   end
 
-  def up_seat_kup_count
-    up_seat_kup_count = 0
-    self.wagons.each do |wagon|
-      up_seat_kup_count += wagon.up_seat_num if wagon.car_type == "Купейный"
+  def seat_count(car_type, seat_type)
+    counter = 0
+    if seat_type == "верхние"
+      self.wagons.each do |wagon|
+        counter += wagon.up_seat_num if wagon.car_type == car_type
+      end
+    else
+      self.wagons.each do |wagon|
+        counter += wagon.low_seat_num if wagon.car_type == car_type
+      end
     end
-    up_seat_kup_count
+    counter
   end  
-
-  def low_seat_kup_count
-    low_seat_kup_count = 0
-    self.wagons.each do |wagon|
-      low_seat_kup_count += wagon.low_seat_num if wagon.car_type == "Купейный"
-    end
-    low_seat_kup_count
-  end
-
-  def plz_count
-    plz_count = 0
-    self.wagons.each do |wagon|
-      plz_count += 1 if wagon.car_type == "Плацкартный"
-    end
-    plz_count
-  end
-
-  def up_seat_plz_count
-    up_seat_plz_count = 0
-    self.wagons.each do |wagon|
-      up_seat_plz_count += wagon.up_seat_num if wagon.car_type == "Плацкартный"
-    end
-    up_seat_plz_count
-  end
-
-  def low_seat_plz_count
-    low_seat_plz_count = 0
-    self.wagons.each do |wagon|
-      low_seat_plz_count += wagon.low_seat_num if wagon.car_type == "Плацкартный"
-    end
-    low_seat_plz_count
-  end
 
 end
