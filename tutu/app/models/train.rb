@@ -17,13 +17,10 @@ class Train < ApplicationRecord
 
   def seat_count(car_type, seat_type)
     counter = 0
-    if seat_type == "верхние"
-      self.wagons.each do |wagon|
-        counter += wagon.up_seat_num if wagon.car_type == car_type
-      end
-    else
-      self.wagons.each do |wagon|
-        counter += wagon.low_seat_num if wagon.car_type == car_type
+    self.wagons.each do |wagon|
+      if wagon.car_type == car_type
+        seats = seat_type == "верхние" ? wagon.up_seat_num : wagon.low_seat_num
+        counter += seats
       end
     end
     counter
