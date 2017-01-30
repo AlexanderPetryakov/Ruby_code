@@ -1,0 +1,28 @@
+<%= form_for(@wagon) do |f| %>
+  <%=render 'common/errors', resourse: @wagon %>
+
+  <div class="field">
+    <%= f.label :car_type, "Тип вагона" %>
+    <label><%= f.radio_button :car_type, "Купейный" %> Купейный </label>
+    <label><%= f.radio_button :car_type, "Плацкартный" %> Плацкартный </label>
+  </div>
+
+  <div class="field">
+  <%= f.label :low_seat_num, "Количество нижних мест" %>
+  <%= f.text_field :low_seat_num %>
+  </div>
+
+  <div class="field">
+  <%= f.label :up_seat_num, "Количество верхних мест" %>
+  <%= f.text_field :up_seat_num %>
+  </div>
+
+  <div class="filed">
+    <%= f.label :train, "В составе поезда" %>
+    <%= f.collection_select :train_id, Train.all, :id, :number %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "#{ @wagon.new_record? ? 'Создать' : 'Изменить' }" %>
+  </div>
+<% end %>

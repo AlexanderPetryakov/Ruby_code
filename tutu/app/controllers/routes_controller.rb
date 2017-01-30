@@ -1,12 +1,12 @@
 class RoutesController < ApplicationController
   before_action :set_route, only: [:show, :edit, :update, :destroy]
 
-	def index
+  def index
     @routes = Route.all
-	end
+  end
 
-	def show
-	end
+  def show
+  end
 
   def new
     @route = Route.new
