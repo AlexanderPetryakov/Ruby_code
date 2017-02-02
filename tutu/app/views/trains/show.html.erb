@@ -24,21 +24,19 @@
 
 <% if @train.wagons.empty? %>
   <p>
-  В составе поезда нет вагонов.
+    В составе поезда нет вагонов.
   </p>
 <% else %>
   
   <p>
-  <strong>В составе поезда: </strong>
-  купейных вагонов: <%= @train.wagon_count("Купейный") %>, 
-  плацкартных вагонов: <%= @train.wagon_count("Плацкартный") %>.
+    <strong>В составе поезда: </strong>
+    <ul>
+      <% @train.wagons.by_number(@train.wagons_order).each do |wagon| %>
+      <li><%= link_to "Вагон №#{wagon.number}", wagon_path(wagon) %></li>
+    <% end %>
+    </ul>
   </p>
 
-  <p>
-  <strong>Мест: </strong>
-  плацкартных верхних/нижних: <%= @train.seat_count("Плацкартный", "верхние") %>/<%= @train.seat_count("Плацкартный", "нижние") %>, 
-  купейных верхних/нижних: <%= @train.seat_count("Купейный", "верхние") %>/<%= @train.seat_count("Купейный", "нижние") %>.
-  </p>
 <% end %>
 
 
