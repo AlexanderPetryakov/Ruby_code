@@ -32,7 +32,7 @@
     <strong>В составе поезда: </strong>
     <ul>
       <% @train.wagons.by_number(@train.wagons_order).each do |wagon| %>
-      <li><%= link_to "Вагон № #{wagon.number}", wagon_path(wagon) %></li>
+      <li><%= link_to "Вагон №#{wagon.number}", wagon_path(wagon) %></li>
     <% end %>
     </ul>
   </p>
