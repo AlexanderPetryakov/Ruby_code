@@ -24,5 +24,4 @@
   Сидячих: <%= @wagon.sitting_seats %><br>
 </p>
 
-<%= link_to 'Редактировать', edit_wagon_path(@wagon) %> |
-<%= link_to 'Назад к списку вагонов', wagons_path %>
+<%= link_to 'Назад', @wagon.train %>
