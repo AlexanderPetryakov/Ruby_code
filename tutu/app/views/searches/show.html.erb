@@ -38,7 +38,7 @@
             <td><%= @search.arrival_station.time_in(train.route, :arrival_time) %></td>
             <td>
               <%= form_tag new_ticket_path, method: :get do %>
-              <%= link_to "Купить билет", new_ticket_path( train_id: train.id,               departure_station_id: @search.departure_station_id, arrival_station_id: @search.arrival_station_id ) %>
+              <%= link_to "Купить билет", new_ticket_path( train_id: train.id, departure_station_id: @search.departure_station_id, arrival_station_id: @search.arrival_station_id ) %>
               <% end %>
             </td>
           </tr>
