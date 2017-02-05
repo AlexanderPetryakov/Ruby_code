@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+ 
   resources :trains do
     resources :wagons, shallow: true
   end
@@ -9,7 +10,9 @@ Rails.application.routes.draw do
   end
   
   resources :routes
-  resource :search, only: [:new, :show, :edit]
+
+  resources :tickets, only: [:new, :show, :create]
+  resource :search, only: [:show, :create]
   
   get 'welcome/index'
 

@@ -1,1 +1,49 @@
 <h1>Поиск билета</h1>
+
+<%= form_for @search, method: :post, url: search_path do |f| %>
+
+  <div class="field">
+  <%= f.label :departure_station_id, "Станция отправления" %>
+  <%= f.collection_select :departure_station_id, RailwayStation.all, :id, :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :arrival_station_id, "Станция прибытия" %>
+    <%= f.collection_select :arrival_station_id, RailwayStation.all, :id, :title %>
+  </div>
+  <p>
+    <div class="actions">
+      <%= f.submit "Найти" %>
+    </div>
+  </p>
+
+  <% if @search.result %>
+    <h2>Результаты поиска: </h2>
+    <table>
+      <thead>
+        <tr>
+          <td>Поезд № </td>
+          <td width="100px">Маршрут</td>
+          <td>Время отправления</td>
+          <td>Время прибытия</td>
+        </tr>  
+      </thead>
+
+      <tbody>
+        <% @search.result.each do |train| %>
+          <tr>
+            <td><%= train.number %></td>
+            <td><%= train.route.title %></td>
+            <td><%= @search.departure_station.time_in(train.route, :departure_time) %></td>
+            <td><%= @search.arrival_station.time_in(train.route, :arrival_time) %></td>
+            <td>
+              <%= form_tag new_ticket_path, method: :get do %>
+              <%= link_to "Купить билет", new_ticket_path( train_id: train.id,               departure_station_id: @search.departure_station_id, arrival_station_id: @search.arrival_station_id ) %>
+              <% end %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% end %>
+<% end %>
