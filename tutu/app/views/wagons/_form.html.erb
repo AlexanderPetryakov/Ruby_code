@@ -1,5 +1,5 @@
-<%= form_for(@wagon) do |f| %>
-  <%=render 'common/errors', resourse: @wagon %>
+<%= form_for [@train, @wagon] do |f| %>
+  <!--<%=render 'common/errors', resourse: @wagon %>-->
 
   <div class="field">
     <%= f.label :type, "Тип вагона" %>
@@ -31,10 +31,12 @@
     <%= f.text_field :sitting_seats %>
   </div>
 
+  <!-- 
   <div class="filed">
     <%= f.label :train, "В составе поезда" %>
     <%= f.collection_select :train_id, Train.all, :id, :number %>
   </div>
+  -->
 
   <div class="actions">
     <%= f.submit "#{ @wagon.new_record? ? 'Создать' : 'Изменить' }" %>

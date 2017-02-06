@@ -22,22 +22,24 @@
 	<% end %>
 </p>
 
-<% if @train.wagons.empty? %>
-  <p>
+<p>
+  <strong>Вагоны</strong>
+  <% if @train.wagons.empty? %>
+    <p>
     В составе поезда нет вагонов.
-  </p>
-<% else %>
-  
-  <p>
-    <strong>В составе поезда: </strong>
+    </p>
+  <% else %> 
     <ul>
       <% @train.wagons.by_number(@train.wagons_order).each do |wagon| %>
-      <li><%= link_to "Вагон №#{wagon.number}", wagon_path(wagon) %></li>
-    <% end %>
+        <li><%= link_to "Вагон №#{wagon.number}", wagon %></li>
+      <% end %>
     </ul>
-  </p>
+  <% end %>
+</p>
 
-<% end %>
+<p>
+  <%= link_to "Добавить вагон",new_train_wagon_path(@train) %>
+</p>
 
 
 <%= link_to 'Редактировать', edit_train_path(@train) %> |

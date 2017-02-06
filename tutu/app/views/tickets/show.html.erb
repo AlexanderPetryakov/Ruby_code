@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p><strong>Билет</strong></p>
+
+<p>
+  <strong>Номер поезда: </strong>
+  <%= @ticket.train.number %>
+</p>
+
+<p>
+  <strong>Станция отправления: </strong>
+  <%= @ticket.departure_station.title %>
+</p>
+
+<p>
+  <strong>Станция прибытия: </strong>
+  <%= @ticket.arrival_station.title %>
+</p>
+
+<p>
+  <strong>ФИО пассижира: </strong>
+  <%= @ticket.passenger_name %>
+</p>
+
+<p>
+  <strong>Номер паспорта: </strong>
+  <%= @ticket.passport_number %>
+</p>
+
+<%= link_to 'Поиск билетов', search_path %>
