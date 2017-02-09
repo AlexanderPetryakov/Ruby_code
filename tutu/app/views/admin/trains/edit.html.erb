@@ -2,5 +2,5 @@
 
 <%= render 'form', train: @train %>
 
-<%= link_to 'Показать поезд', @train %> |
-<%= link_to 'Назад к списку поездов', trains_path %>
+<%= link_to 'Показать поезд', [:admin, @train] %> |
+<%= link_to 'Назад к списку поездов', admin_trains_path %>

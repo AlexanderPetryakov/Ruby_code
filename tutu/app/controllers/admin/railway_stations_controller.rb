@@ -24,7 +24,7 @@ class Admin::RailwayStationsController < Admin::BaseController
     @railway_station = RailwayStation.new(railway_station_params)
 
     if @railway_station.save
-      redirect_to @railway_station, notice: 'Railway station was successfully created.'
+      redirect_to admin_railway_stations_path(@railway_station), notice: 'Railway station was successfully created.'
     else
       render :new
     end
@@ -33,7 +33,7 @@ class Admin::RailwayStationsController < Admin::BaseController
   # PATCH/PUT /railway_stations/1
   def update
     if @railway_station.update(railway_station_params)
-      redirect_to @railway_station, notice: 'Railway station was successfully updated.'
+      redirect_to admin_railway_stations_path(@railway_station), notice: 'Railway station was successfully updated.'
     else
       render :edit
     end
@@ -42,19 +42,19 @@ class Admin::RailwayStationsController < Admin::BaseController
   # DELETE /railway_stations/1
   def destroy
     @railway_station.destroy
-    redirect_to railway_stations_url, notice: 'Railway station was successfully destroyed.'
+    redirect_to admin_railway_stations_path, notice: 'Railway station was successfully destroyed.'
   end
 
   def update_number
     @route = Route.find(params[:route_id])
     @railway_station.update_number(@route, params[:number])
-    redirect_to @route
+    redirect_to admin_route_path(@route)
   end
 
   def update_time
     @route = Route.find(params[:route_id])
     @railway_station.update_time(@route, params[:arrival_time], params[:departure_time])
-    redirect_to @route
+    redirect_to admin_route_path(@route)
   end
 
   private

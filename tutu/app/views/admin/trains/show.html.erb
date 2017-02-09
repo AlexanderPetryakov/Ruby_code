@@ -31,16 +31,16 @@
   <% else %> 
     <ul>
       <% @train.wagons.by_number(@train.wagons_order).each do |wagon| %>
-        <li><%= link_to "Вагон №#{wagon.number}", wagon %></li>
+        <li><%= link_to "Вагон №#{wagon.number}", admin_wagon_path(wagon) %></li>
       <% end %>
     </ul>
   <% end %>
 </p>
 
 <p>
-  <%= link_to "Добавить вагон",new_train_wagon_path(@train) %>
+  <%= link_to "Добавить вагон",new_admin_train_wagon_path(@train) %>
 </p>
 
 
-<%= link_to 'Редактировать', edit_train_path(@train) %> |
-<%= link_to 'Назад к списку поездов', trains_path %>
+<%= link_to 'Редактировать', edit_admin_train_path(@train) %> |
+<%= link_to 'Назад к списку поездов', admin_trains_path %>
