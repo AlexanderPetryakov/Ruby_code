@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   
 
-  resources :tickets, only: [:new, :show, :create]
+  resources :tickets
   resource :search, only: [:show, :create]
 
   namespace :admin do
