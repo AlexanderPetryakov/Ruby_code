@@ -1,12 +1,12 @@
 class Admin::TicketsController < Admin::BaseController
   
-  	before_action :set_ticket, only: [:show, :edit, :update, :destroy]
+    before_action :set_ticket, only: [:show, :edit, :update, :destroy]
 
   def index
     @tickets = Ticket.all
   end
 
-	def new
+  def new
     @ticket = Ticket.new(train_id: params[:train_id], departure_station_id: params[:departure_station_id],
       arrival_station_id: params[:arrival_station_id], user_id: params[:user_id])
   end

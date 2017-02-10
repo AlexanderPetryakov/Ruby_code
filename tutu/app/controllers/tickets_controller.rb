@@ -1,12 +1,12 @@
 class TicketsController < ApplicationController
   before_action :authenticate_user!
-	before_action :set_ticket, only: [:show, :edit, :update, :destroy]
+  before_action :set_ticket, only: [:show, :edit, :update, :destroy]
 
   def index
     @tickets = current_user.tickets
   end
 
-	def new
+  def new
     @ticket = Ticket.new(train_id: params[:train_id], departure_station_id: params[:departure_station_id],
       arrival_station_id: params[:arrival_station_id])
   end
