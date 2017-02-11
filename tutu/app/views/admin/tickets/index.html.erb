@@ -1,0 +1,18 @@
+<h1>Список билетов</h1>
+
+<table>
+  <thead>
+    <th>Номер поезда</th>
+    <th>Станция отправления</th>
+    <th>Станция прибытия</th>
+    <th>ФИО</th>
+    <th>Номер паспорта</th>
+  </thead>
+
+  <tbody>
+    <%= render @tickets %>
+  </tbody>
+</table>
+
+
+<%= link_to 'Купить билет', new_admin_ticket_path %>
