@@ -7,8 +7,7 @@ class Admin::TicketsController < Admin::BaseController
   end
 
   def new
-    @ticket = Ticket.new(train_id: params[:train_id], departure_station_id: params[:departure_station_id],
-      arrival_station_id: params[:arrival_station_id], user_id: params[:user_id])
+    @ticket = Ticket.new
   end
 
   def show
