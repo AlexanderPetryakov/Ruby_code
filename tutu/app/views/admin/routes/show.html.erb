@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Название:</strong>
+  <strong><%= t('.route_title') %></strong>
   <%= @route.title %>
 </p>
 
@@ -9,7 +9,7 @@
   <p>Поездов на маршруте нет.</p>
 <% else %>
   <p>
-  	<strong>На маршруте следующие поезда:</strong>
+  	<strong><%= t('.route_trains') %></strong>
   </p>
   <ul>
     <% @route.trains.each do |train| %>
@@ -19,20 +19,20 @@
 <% end %>
 
 <p>
-  <strong> Станции в маршруте:</strong>
+  <strong><%= t('.route_stations') %></strong>
 </p>
 
 <p>
   <% if @route.railway_stations.empty? %>
-    Станций в маршруте нет.
+    <%= t('.route_no_stations') %>
   <% else %>
   <table>
     <thead>
       <tr>
-      <td width="100px">Название</td>
-      <td>Порядковый номер</td>
-      <td>Время прибытия</td>
-      <td>Время отправления</td>
+      <td width="100px"><%= t('.station_title') %></td>
+      <td><%= t('.number') %></td>
+      <td><%= t('.arr_time') %></td>
+      <td><%= t('.dep_time') %></td>
       </tr>  
     </thead>
     <tbody>      
@@ -43,7 +43,7 @@
             <%= form_tag update_number_admin_railway_station_path(station), method: :patch do %>
               <%= number_field_tag :number, station.number_in(@route) %>
               <%= hidden_field_tag :route_id, @route.id %>
-              <%= submit_tag "Изменить" %>
+              <%= submit_tag t('common.change') %>
             <% end %>
           </td>
         
@@ -51,7 +51,7 @@
               <td><%= time_field_tag :arrival_time, station.time_in(@route, :arrival_time) %></td>
               <td><%= time_field_tag :departure_time, station.time_in(@route, :departure_time) %>
               <%= hidden_field_tag :route_id, @route.id %>
-              <%= submit_tag "Изменить" %></td>
+              <%= submit_tag t('common.change') %></td>
             <% end %>
          
         </tr>
@@ -61,5 +61,5 @@
   <% end %>
 </p>
 
-<%= link_to 'Редактировать', edit_admin_route_path(@route) %> |
-<%= link_to 'Назад к списку маршрутов', admin_routes_path %>
+<%= link_to t('common.edit'), edit_admin_route_path(@route) %> |
+<%= link_to t('common.back'), admin_routes_path %>

@@ -1,12 +1,12 @@
-<h1>Список билетов</h1>
+<h1><%= t('.maintitle') %></h1>
 
 <table>
   <thead>
-    <th>Номер поезда</th>
-    <th>Станция отправления</th>
-    <th>Станция прибытия</th>
-    <th>ФИО</th>
-    <th>Номер паспорта</th>
+    <th><%= t('common.train_number') %></th>
+    <th><%= t('common.dep_st') %></th>
+    <th><%= t('common.arr_st') %></th>
+    <th><%= t('common.pass_name') %></th>
+    <th><%= t('common.pass_number') %></th>
   </thead>
 
   <tbody>
@@ -15,4 +15,4 @@
 </table>
 
 
-<%= link_to 'Купить билет', new_admin_ticket_path %>
+<%= link_to t('.buy_ticket'), new_admin_ticket_path %>

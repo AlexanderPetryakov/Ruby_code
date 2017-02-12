@@ -1,5 +1,5 @@
-<h1>Редактирование билета</h1>
+<h1><%= t('.maintitle') %></h1>
 
   <%= render 'form', ticket: @ticket %>
 
-<p><%= link_to 'Список билетов', admin_tickets_path %></p>
+<p><%= link_to t('common.back'), admin_tickets_path %></p>
