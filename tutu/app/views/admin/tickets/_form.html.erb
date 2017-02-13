@@ -2,37 +2,37 @@
   <%= render 'common/errors', resourse: @ticket %>
 
   <div class="field">
-    <%= f.label :train_id, "Номер поезда" %>
+    <%= f.label :train_id, t('common.train_number') %>
     <%= f.collection_select :train_id, Train.all, :id, :number %>
   </div>
 
   <div class="field">
-    <%= f.label :departure_station_id, "Станция отправления" %>
+    <%= f.label :departure_station_id, t('common.dep_st') %>
     <%= f.collection_select :departure_station_id, RailwayStation.all, :id, :title %>
   </div>
 
   <div class="field">
-    <%= f.label :arrival_station_id, "Станция прибытия" %>
+    <%= f.label :arrival_station_id, t('common.arr_st') %>
     <%= f.collection_select :arrival_station_id, RailwayStation.all, :id, :title %>
   </div>
 
   <div class="field">
-    <%= f.label :passenger_name, "ФИО пассажира" %>
+    <%= f.label :passenger_name, t('common.pass_name') %>
     <%= f.text_field :passenger_name %>
   </div>
 
   <div class="field">
-    <%= f.label :passport_number, "Номер паспорта" %>
+    <%= f.label :passport_number, t('common.pass_number') %>
     <%= f.text_field :passport_number %>
   </div>
 
   <div class="field">
-    <%= f.label :user_id, "Пользователь" %>
+    <%= f.label :user_id, t('.user') %>
     <%= f.collection_select :user_id, User.all, :id, :email %>
   </div>
 
   <div class="actions">
-    <%= f.submit "#{ @ticket.new_record? ? 'Создать' : 'Изменить' }" %>
+    <%= f.submit t('.submit', action: @ticket.new_record? ? 'Создать' : 'Изменить') %>
   </div>
 
 <% end %>
