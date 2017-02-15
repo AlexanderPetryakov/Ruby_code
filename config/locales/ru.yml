@@ -1,0 +1,63 @@
+ru: 
+  common:
+    back: 'Назад'
+    errors: 'При заполнении формы возникли ошибки'
+    show: 'Показать'
+    edit: 'Редактировать'
+    delete: 'Удалить'
+    change: 'Изменить'
+
+    train_number: 'Номер поезда: '
+    dep_st: 'Станция отправления: '
+    arr_st: 'Станция назначения: '
+    pass_name: 'ФИО пассажира: '
+    pass_number: 'Номер паспорта: '
+  admin:
+    railway_stations:
+      new:
+        title: 'Новая станция'
+      form:
+        submit: '%{action} станцию'
+      index: 
+        maintitle: 'Список станций'
+        title: 'Название станции'
+        new_station: 'Новая станция'
+      show: 
+        title: 'Название станции'
+      edit: 
+        maintitle: 'Редактирование станции'
+    routes:
+      index:
+        maintitle: 'Список маршрутов'
+        title: 'Название маршрута'
+        new_route: 'Новый маршрут'
+      show:
+        route_title: 'Название маршрута: '
+        route_trains: 'На маршруте следующие поезда:'
+        route_stations: 'Станции в маршруте: '
+        route_no_stations: 'Станций в мрашруте нет.'
+        station_title: 'Название'
+        number: 'Порядковый номер'
+        arr_time: 'Время отправления'
+        dep_time: 'Время прибытия'
+      new:
+        maintitle: 'Новый маршрут'
+      edit:
+        maintitle: 'Редактирование маршрута'
+      form:
+        route_stations: 'Станции в маршруте'
+        submit: '%{action} маршрут'
+    tickets:
+      index:
+        maintitle: 'Список билетов'
+        buy_ticket: 'Купить билет'
+      show: 
+        maintitle: 'Билет'
+        buyer: 'Билет купил: '
+      edit:
+        maintitle: 'Редактирование билета'
+      new:
+        maintitle: 'Купить билет'
+      form:
+        user: 'Пользователь'
+        submit: '%{action} билет'

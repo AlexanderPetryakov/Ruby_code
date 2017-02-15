@@ -1,0 +1,18 @@
+<h1><%= t('.maintitle') %></h1>
+
+<table>
+  <thead>
+    <th><%= t('common.train_number') %></th>
+    <th><%= t('common.dep_st') %></th>
+    <th><%= t('common.arr_st') %></th>
+    <th><%= t('common.pass_name') %></th>
+    <th><%= t('common.pass_number') %></th>
+  </thead>
+
+  <tbody>
+    <%= render @tickets %>
+  </tbody>
+</table>
+
+
+<%= link_to t('.buy_ticket'), new_admin_ticket_path %>
