@@ -18,9 +18,8 @@
       <td><%= ticket.passenger_name %></td>
       <td><%= ticket.passport_number %></td>
 
-      <td><%= link_to t('common.show'), ticket %></td>
-      <td><%= link_to t('common.edit'), edit_ticket_path(ticket) %></td>
-      <td><%= link_to t('common.delete'), ticket, method: :delete, data: { confirm: 'Вы уверены?' }%></td>
+      <td><%= link_to t('common.show'), ticket, class: 'btn btn-default' %></td>
+      <td><%= link_to "Сдать билет", ticket, method: :delete, data: { confirm: 'Вы уверены?' }, class: 'btn btn-default' %></td>
       </tr>
     <% end %>
   </tbody>

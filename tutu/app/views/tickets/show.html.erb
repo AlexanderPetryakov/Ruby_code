@@ -27,5 +27,5 @@
   <%= @ticket.passport_number %>
 </p>
 
-<%= link_to t('common.back'), tickets_path %>
-<%= link_to 'Купить билетов', search_path %>
+<%= link_to 'Список купленных билетов', tickets_path, class: 'btn btn-default' %>
+<%= link_to 'Купить билет', search_path, class: 'btn btn-default' %>
