@@ -88,12 +88,11 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :address => 'smtp.gmail.com',
-    :port => 465,
-    :user_name => ENV['USER_NAME_SMTP'],
-    :password => ENV['PASSWORD_SMTP'],
+    :port => 587,
+    :domain => 'gmail.com'
+    :user_name => 'petryakov.sasha@gmail.com',
+    :password => 'gtnhzrjd1984',
     :authentication => :plain,
     :enable_starttls_auto => true,
-    :openssl_verify_mode => 'none',
-    :tls => true
   }
 end

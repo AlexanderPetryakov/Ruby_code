@@ -1,373 +1,0 @@
-Script started on Чт 16 фев 2017 22:13:14
-]0;alexander@alexander-VirtualBox: ~/Ruby_code[01;32malexander@alexander-VirtualBox[00m:[01;34m~/Ruby_code[00m$ export GMAIL_SMTP_USER=petryakov.sasha@gmail.co m
-]0;alexander@alexander-VirtualBox: ~/Ruby_code[01;32malexander@alexander-VirtualBox[00m:[01;34m~/Ruby_code[00m$ export GMAIL_SMTP_USER=petryakov.sasha@gmail.comm[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KPASSWORD=gtnhzrjd1984
-]0;alexander@alexander-VirtualBox: ~/Ruby_code[01;32malexander@alexander-VirtualBox[00m:[01;34m~/Ruby_code[00m$ heroku config:add GMAIL_SMTP_USER=petryakov.sas ha@gmail.com
-[1000D[2K[?25lSetting [32mGMAIL_SMTP_USER[39m and restarting [38;5;104m⬢ immense-bastion-67659[0m... [38;5;104m⣾[0m 
-[1A[66C[38;5;104m⣽[0m[1B[1000D[2K[1A[66C[38;5;104m⣻[0m[1B[1000D[2K[1A[66C[38;5;104m⢿[0m[1B[1000D[2K[1A[66C[38;5;104m⡿[0m[1B[1000D[2K[1A[66C[38;5;104m⣟[0m[1B[1000D[2K[1A[66C[38;5;104m⣯[0m[1B[1000D[2K[1A[66C[38;5;104m⣷[0m[1B[1000D[2K[1A[66C[38;5;104m⣾[0m[1B[1000D[2K[1A[66C[38;5;104m⣽[0m[1B[1000D[2K[1A[66C[38;5;104m⣻[0m[1B[1000D[2K[1A[66C[38;5;104m⢿[0m[1B[1000D[2K[1A[66C[38;5;104m⡿[0m[1B[1000D[2K[1A[66C[38;5;104m⣟[0m[1B[1000D[2K[1A[66C[38;5;104m⣯[0m[1B[1000D[2K[1A[66C[38;5;104m⣷[0m[1B[1000D[2K[1A[66C[38;5;104m⣾[0m[1B[1000D[2K[1A[66C[38;5;104m⣽[0m[1B[1000D[2K[1A[66C[38;5;104m⣻[0m[1B[1000D[2K[1A[66C[38;5;104m⢿[0m[1B[1000D[2K[1A[66C[38;5;104m⡿[0m[1B[1000D[2K[1A[66C[38;5;104m⣟[0m[1B[1000D[2K[1A[66C[38;5;104m⣯[0m[1B[1000D[2K[1A[66C[38;5;104m⣷[0m[1B[1000D[2K[1A[66C[38;5;104m⣾[0m[1B[1000D[2K[1A[66C[38;5;104m⣽[0m[1B[1000D[2K[1A[66C[38;5;104m⣻[0m[1B[1000D[2K[1A[JSetting [32mGMAIL_SMTP_USER[39m and restarting [38;5;104m⬢ immense-bastion-67659[0m... done, [34m[1mv7[22m[39m
-[?25h[32mGMAIL_SMTP_USER[39m: petryakov.sasha@gmail.com
-[?25h]0;alexander@alexander-VirtualBox: ~/Ruby_code[01;32malexander@alexander-VirtualBox[00m:[01;34m~/Ruby_code[00m$ heroku config:add GMAIL_SMTP_USER=petryakov.sashha@gmail.com[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KPASSWORD=gtnhzrjd1 984
-[1000D[2K[?25lSetting [32mGMAIL_SMTP_PASSWORD[39m and restarting [38;5;104m⬢ immense-bastion-67659[0m... [38;5;104m⣾[0m 
-[1A[70C[38;5;104m⣽[0m[1B[1000D[2K[1A[70C[38;5;104m⣻[0m[1B[1000D[2K[1A[70C[38;5;104m⢿[0m[1B[1000D[2K[1A[70C[38;5;104m⡿[0m[1B[1000D[2K[1A[70C[38;5;104m⣟[0m[1B[1000D[2K[1A[70C[38;5;104m⣯[0m[1B[1000D[2K[1A[70C[38;5;104m⣷[0m[1B[1000D[2K[1A[70C[38;5;104m⣾[0m[1B[1000D[2K[1A[70C[38;5;104m⣽[0m[1B[1000D[2K[1A[70C[38;5;104m⣻[0m[1B[1000D[2K[1A[70C[38;5;104m⢿[0m[1B[1000D[2K[1A[70C[38;5;104m⡿[0m[1B[1000D[2K[1A[70C[38;5;104m⣟[0m[1B[1000D[2K[1A[70C[38;5;104m⣯[0m[1B[1000D[2K[1A[70C[38;5;104m⣷[0m[1B[1000D[2K[1A[70C[38;5;104m⣾[0m[1B[1000D[2K[1A[70C[38;5;104m⣽[0m[1B[1000D[2K[1A[70C[38;5;104m⣻[0m[1B[1000D[2K[1A[70C[38;5;104m⢿[0m[1B[1000D[2K[1A[JSetting [32mGMAIL_SMTP_PASSWORD[39m and restarting [38;5;104m⬢ immense-bastion-67659[0m... done, [34m[1mv8[22m[39m
-[?25h[32mGMAIL_SMTP_PASSWORD[39m: gtnhzrjd1984
-[?25h]0;alexander@alexander-VirtualBox: ~/Ruby_code[01;32malexander@alexander-VirtualBox[00m:[01;34m~/Ruby_code[00m$ [K]0;alexander@alexander-VirtualBox: ~/Ruby_code[01;32malexander@alexander-VirtualBox[00m:[01;34m~/Ruby_code[00m$ git status
-On branch lesson_20
-Your branch is up-to-date with 'origin/lesson_20'.
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	[31mmodified:   Gemfile[m
-	[31mmodified:   Gemfile.lock[m
-	[31mmodified:   app/mailers/application_mailer.rb[m
-	[31mmodified:   config/environments/production.rb[m
-	[31mmodified:   config/initializers/devise.rb[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	[31minstall[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;alexander@alexander-VirtualBox: ~/Ruby_code[01;32malexander@alexander-VirtualBox[00m:[01;34m~/Ruby_code[00m$ git add .
-]0;alexander@alexander-VirtualBox: ~/Ruby_code[01;32malexander@alexander-VirtualBox[00m:[01;34m~/Ruby_code[00m$ git commit -m "mailer"
-[lesson_20 ff6ae17] mailer
- 6 files changed, 26 insertions(+), 2 deletions(-)
- create mode 100644 install
-]0;alexander@alexander-VirtualBox: ~/Ruby_code[01;32malexander@alexander-VirtualBox[00m:[01;34m~/Ruby_code[00m$ git push
-Username for 'https://github.com': AlexanderPetryakov
-Password for 'https://AlexanderPetryakov@github.com': 
-Counting objects: 1   Counting objects: 13, done.
-Delta compression using up to 2 threads.
-Compressing objects:   7% (1/13)   Compressing objects:  15% (2/13)   Compressing objects:  23% (3/13)   Compressing objects:  30% (4/13)   Compressing objects:  38% (5/13)   Compressing objects:  46% (6/13)   Compressing objects:  53% (7/13)   Compressing objects:  61% (8/13)   Compressing objects:  69% (9/13)   Compressing objects:  76% (10/13)   Compressing objects:  84% (11/13)   Compressing objects:  92% (12/13)   Compressing objects: 100% (13/13)   Compressing objects: 100% (13/13), done.
-Writing objects:   7% (1/13)   Writing objects:  15% (2/13)   Writing objects:  23% (3/13)   Writing objects:  30% (4/13)   Writing objects:  38% (5/13)   Writing objects:  46% (6/13)   Writing objects:  53% (7/13)   Writing objects:  61% (8/13)   Writing objects:  69% (9/13)   Writing objects:  76% (10/13)   Writing objects:  84% (11/13)   Writing objects:  92% (12/13)   Writing objects: 100% (13/13)   Writing objects: 100% (13/13), 1.81 KiB | 0 bytes/s, done.
-Total 13 (delta 8), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/8)   [Kremote: Resolving deltas:  12% (1/8)   [Kremote: Resolving deltas:  25% (2/8)   [Kremote: Resolving deltas:  37% (3/8)   [Kremote: Resolving deltas:  50% (4/8)   [Kremote: Resolving deltas:  62% (5/8)   [Kremote: Resolving deltas:  75% (6/8)   [Kremote: Resolving deltas:  87% (7/8)   [Kremote: Resolving deltas: 100% (8/8)   [Kremote: Resolving deltas: 100% (8/8), completed with 8 local objects.[K
-To https://github.com/AlexanderPetryakov/Ruby_code.git
-   0a18f64..ff6ae17  lesson_20 -> lesson_20
-]0;alexander@alexander-VirtualBox: ~/Ruby_code[01;32malexander@alexander-VirtualBox[00m:[01;34m~/Ruby_code[00m$ git pushcommit -m "mailer"add .[Kstatusheroku config:add GMAIL_SMTP_PASSWORD=gtnhzrjd1984USER=petryakov.sasha@gmail.com[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pexport GMAIL_SMTP_PASSWORD=gtnhzrjd1984USER=petryakov.sasha@gmail.com[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Pheroku run rake db:migrate[14Pcd Ruby_code[4Pgit push heroku lesson_20:masterstatus[Kpush heroku lesson_20:master
-Counting objects: 13, done.
-Delta compression using up to 2 threads.
-Compressing objects:   7% (1/13)   Compressing objects:  15% (2/13)   Compressing objects:  23% (3/13)   Compressing objects:  30% (4/13)   Compressing objects:  38% (5/13)   Compressing objects:  46% (6/13)   Compressing objects:  53% (7/13)   Compressing objects:  61% (8/13)   Compressing objects:  69% (9/13)   Compressing objects:  76% (10/13)   Compressing objects:  84% (11/13)   Compressing objects:  92% (12/13)   Compressing objects: 100% (13/13)   Compressing objects: 100% (13/13), done.
-Writing objects:   7% (1/13)   Writing objects:  15% (2/13)   Writing objects:  23% (3/13)   Writing objects:  30% (4/13)   Writing objects:  38% (5/13)   Writing objects:  46% (6/13)   Writing objects:  53% (7/13)   Writing objects:  61% (8/13)   Writing objects:  69% (9/13)   Writing objects:  76% (10/13)   Writing objects:  84% (11/13)   Writing objects:  92% (12/13)   Writing objects: 100% (13/13)   Writing objects: 100% (13/13), 1.81 KiB | 0 bytes/s, done.
-Total 13 (delta 8), reused 0 (delta 0)
-remote: Compressing source files... done.[K
-remote: Building source:[K
-remote: 
-remote: -----> Ruby app detected[K
-remote: -----> Compiling Ruby/Rails[K
-remote: -----> Using Ruby version: ruby-2.2.4[K
-remote: -----> Installing dependencies using bundler 1.13.7[K
-remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment[K
-remote:        Fetching gem metadata from https://rubygems.org/.........[K
-remote:        Fetching version metadata from https://rubygems.org/..[K
-remote:        Fetching dependency metadata from https://rubygems.org/.[K
-remote:        Using rake 12.0.0[K
-remote:        Using concurrent-ruby 1.0.4[K
-remote:        Using i18n 0.7.0[K
-remote:        Using minitest 5.10.1[K
-remote:        Using thread_safe 0.3.5[K
-remote:        Using builder 3.2.2[K
-remote:        Using erubis 2.7.0[K
-remote:        Using mini_portile2 2.1.0[K
-remote:        Using rack 2.0.1[K
-remote:        Using nio4r 1.2.1[K
-remote:        Using websocket-extensions 0.1.2[K
-remote:        Using mime-types-data 3.2016.0521[K
-remote:        Using arel 7.1.4[K
-remote:        Using bcrypt 3.1.11[K
-remote:        Using coffee-script-source 1.12.2[K
-remote:        Using execjs 2.7.0[K
-remote:        Using method_source 0.8.2[K
-remote:        Using thor 0.19.4[K
-remote:        Using commonjs 0.2.7[K
-remote:        Using orm_adapter 0.5.0[K
-remote:        Using multi_json 1.12.1[K
-remote:        Using tilt 2.0.5[K
-remote:        Using libv8 3.16.14.17[K
-remote:        Using pg 0.19.0[K
-remote:        Using puma 3.6.2[K
-remote:        Using bundler 1.13.7[K
-remote:        Using rails_serve_static_assets 0.0.5[K
-remote:        Using rails_stdout_logging 0.0.5[K
-remote:        Using ref 2.0.0[K
-remote:        Using sass 3.4.23[K
-remote:        Using turbolinks-source 5.0.0[K
-remote:        Using tzinfo 1.2.2[K
-remote:        Using rack-test 0.6.3[K
-remote:        Using warden 1.2.7[K
-remote:        Using sprockets 3.7.1[K
-remote:        Using nokogiri 1.7.0.1[K
-remote:        Using mime-types 3.1[K
-remote:        Using websocket-driver 0.6.4[K
-remote:        Using less 2.6.0[K
-remote:        Using coffee-script 2.4.1[K
-remote:        Using uglifier 3.0.4[K
-remote:        Using rails_12factor 0.0.3[K
-remote:        Using therubyracer 0.12.3[K
-remote:        Using turbolinks 5.0.1[K
-remote:        Using activesupport 5.0.1[K
-remote:        Using loofah 2.0.3[K
-remote:        Using mail 2.6.4[K
-remote:        Using rails-dom-testing 2.0.2[K
-remote:        Using globalid 0.3.7[K
-remote:        Using activemodel 5.0.1[K
-remote:        Using jbuilder 2.6.1[K
-remote:        Using rails-html-sanitizer 1.0.3[K
-remote:        Using activejob 5.0.1[K
-remote:        Using activerecord 5.0.1[K
-remote:        Using actionview 5.0.1[K
-remote:        Using actionpack 5.0.1[K
-remote:        Using actioncable 5.0.1[K
-remote:        Using actionmailer 5.0.1[K
-remote:        Using railties 5.0.1[K
-remote:        Using less-rails 2.8.0[K
-remote:        Using sprockets-rails 3.2.0[K
-remote:        Using coffee-rails 4.2.1[K
-remote:        Using responders 2.3.0[K
-remote:        Using jquery-rails 4.2.2[K
-remote:        Using twitter-bootstrap-rails 4.0.0[K
-remote:        Using rails 5.0.1[K
-remote:        Using sass-rails 5.0.6[K
-remote:        Using devise 4.2.0[K
-remote:        Installing json 2.0.3 with native extensions[K
-remote:        Installing postmark 1.10.0[K
-remote:        Installing postmark-rails 0.15.0[K
-remote:        Bundle complete! 21 Gemfile dependencies, 71 gems now installed.[K
-remote:        Gems in the groups development and test were not installed.[K
-remote:        Bundled gems are installed into ./vendor/bundle.[K
-remote:        Post-install message from postmark:[K
-remote:        ==================[K
-remote:        Thanks for installing the postmark gem. If you don't have an account, please[K
-remote:        sign up at http://postmarkapp.com/.[K
-remote:        Review the README.md for implementation details and examples.[K
-remote:        ==================[K
-remote:        [K
-remote:        Bundle completed (4.74s)[K
-remote:        Cleaning up the bundler cache.[K
-remote: -----> Detecting rake tasks[K
-remote: -----> Preparing app for Rails asset pipeline[K
-remote:        Running: rake assets:precompile[K
-remote:        Asset precompilation completed (1.89s)[K
-remote:        Cleaning assets[K
-remote:        Running: rake assets:clean[K
-remote: 
-remote: ###### WARNING:[K
-remote:        No Procfile detected, using the default web server.[K
-remote:        We recommend explicitly declaring how to boot your server process via a Procfile.[K
-remote:        https://devcenter.heroku.com/articles/ruby-default-web-server[K
-remote: 
-remote: -----> Discovering process types[K
-remote:        Procfile declares types     -> (none)[K
-remote:        Default types for buildpack -> console, rake, web, worker[K
-remote: 
-remote: -----> Compressing...[K
-remote:        Done: 47.6M[K
-remote: -----> Launching...[K
-remote:        Released v9[K
-remote:        https://immense-bastion-67659.herokuapp.com/ deployed to Heroku[K
-remote: 
-remote: Verifying deploy.... done.[K
-To https://git.heroku.com/immense-bastion-67659.git
-   0a18f64..ff6ae17  lesson_20 -> master
-]0;alexander@alexander-VirtualBox: ~/Ruby_code[01;32malexander@alexander-VirtualBox[00m:[01;34m~/Ruby_code[00m$ rails server
-=> Booting Puma
-=> Rails 5.0.1 application starting in development on http://localhost:3000
-=> Run `rails server -h` for more startup options
-Puma starting in single mode...
-* Version 3.6.2 (ruby 2.2.4-p230), codename: Sleepy Sunday Serenity
-* Min threads: 5, max threads: 5
-* Environment: development
-* Listening on tcp://localhost:3000
-Use Ctrl-C to stop
-Started GET "/" for 127.0.0.1 at 2017-02-16 22:32:54 +0300
-  [1m[36mActiveRecord::SchemaMigration Load (48.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-Processing by SearchesController#show as HTML
-  Rendering searches/show.html.erb within layouts/application
-  [1m[36mRailwayStation Load (62.2ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations"[0m
-  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations"[0m
-  Rendered searches/show.html.erb within layouts/application (196.4ms)
-Completed 200 OK in 1529ms (Views: 1340.1ms | ActiveRecord: 63.4ms)
-
-
-Started GET "/images/favicon.ico" for 127.0.0.1 at 2017-02-16 22:33:00 +0300
-  
-ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
-  
-actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
-web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
-web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
-web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
-actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
-railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
-railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
-activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
-activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
-activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
-railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
-sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
-rack (2.0.1) lib/rack/method_override.rb:22:in `call'
-rack (2.0.1) lib/rack/runtime.rb:22:in `call'
-activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
-actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
-rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
-railties (5.0.1) lib/rails/engine.rb:522:in `call'
-puma (3.6.2) lib/puma/configuration.rb:225:in `call'
-puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
-puma (3.6.2) lib/puma/server.rb:415:in `process_client'
-puma (3.6.2) lib/puma/server.rb:275:in `block in run'
-puma (3.6.2) lib/puma/thread_pool.rb:116:in `call'
-puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
-  Rendering /home/alexander/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
-  Rendering /home/alexander/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /home/alexander/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
-  Rendered collection of /home/alexander/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [72 times] (85.9ms)
-  Rendered /home/alexander/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (24.2ms)
-  Rendering /home/alexander/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /home/alexander/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
-  Rendered /home/alexander/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (320.0ms)
-Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-16 22:33:02 +0300
-Processing by Devise::SessionsController#new as HTML
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (1.5ms)
-  Rendered devise/sessions/new.html.erb within layouts/application (489.9ms)
-Completed 200 OK in 1009ms (Views: 622.4ms | ActiveRecord: 155.5ms)
-
-
-Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-16 22:33:05 +0300
-Processing by Devise::RegistrationsController#new as HTML
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (1.6ms)
-  Rendered devise/registrations/new.html.erb within layouts/application (7.5ms)
-Completed 200 OK in 101ms (Views: 100.2ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/users" for 127.0.0.1 at 2017-02-16 22:33:51 +0300
-Processing by Devise::RegistrationsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+529+p+bBrGBUb9SX4VgeXPOS/RsLpps3Xgk6AFZuw+lElxAb3lZyj7EXVMQ2KW0B+8S1OcHDZnywbnmhJGhTA==", "user"=>{"email"=>"petryakov.sasha@gmail.com", "first_name"=>"Alexander", "last_name"=>"Alexander", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Exists (81.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "petryakov.sasha@gmail.com"], ["LIMIT", 1]]
-  [1m[35mSQL (47.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "first_name", "last_name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", 2017-02-16 19:33:52 UTC], ["updated_at", 2017-02-16 19:33:52 UTC], ["email", "petryakov.sasha@gmail.com"], ["encrypted_password", "$2a$11$DLBcokdhQhXFQRVFxP8Ni.fGKWSrSM2LHj43CrsCuQqXe2ZL87Ami"], ["confirmation_token", "wHoRM1kg_SnyzKFfDFek"], ["confirmation_sent_at", 2017-02-16 19:33:52 UTC], ["first_name", "Alexander"], ["last_name", "Alexander"]]
-  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
-  Rendering devise/mailer/confirmation_instructions.html.erb
-  Rendered devise/mailer/confirmation_instructions.html.erb (1.7ms)
-Devise::Mailer#confirmation_instructions: processed outbound mail in 277.4ms
-Sent mail to petryakov.sasha@gmail.com (137.6ms)
-Date: Thu, 16 Feb 2017 22:33:53 +0300
-From: petryakov.sasha@gmail.com
-Reply-To: petryakov.sasha@gmail.com
-To: petryakov.sasha@gmail.com
-Message-ID: <58a5fea1458b7_12431498e0431a@alexander-VirtualBox.mail>
-Subject: =?UTF-8?Q?=D0=98=D0=BD=D1=81=D1=82=D1=80=D1=83=D0=BA=D1=86=D0=B8=D0=B8?=
- =?UTF-8?Q?_=D0=BF=D0=BE?=
- =?UTF-8?Q?_=D0=BF=D0=BE=D0=B4=D1=82=D0=B2=D0=B5=D1=80=D0=B6=D0=B4=D0=B5=D0=BD=D0=B8=D1=8E?=
- =?UTF-8?Q?_=D1=83=D1=87=D1=91=D1=82=D0=BD=D0=BE=D0=B9?=
- =?UTF-8?Q?_=D0=B7=D0=B0=D0=BF=D0=B8=D1=81=D0=B8.?=
-Mime-Version: 1.0
-Content-Type: text/html;
- charset=UTF-8
-Content-Transfer-Encoding: 7bit
-
-<p>Welcome petryakov.sasha@gmail.com!</p>
-
-<p>You can confirm your account email through the link below:</p>
-
-<p><a href="http://localhost:3000/users/confirmation?confirmation_token=wHoRM1kg_SnyzKFfDFek">Confirm my account</a></p>
-
-Redirected to http://localhost:3000/
-Completed 302 Found in 1879ms (ActiveRecord: 132.1ms)
-
-
-Started GET "/" for 127.0.0.1 at 2017-02-16 22:33:53 +0300
-Processing by SearchesController#show as HTML
-  Rendering searches/show.html.erb within layouts/application
-  [1m[36mRailwayStation Load (0.3ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations"[0m
-  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations"[0m
-  Rendered searches/show.html.erb within layouts/application (15.4ms)
-Completed 200 OK in 131ms (Views: 125.6ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/users/confirmation?confirmation_token=wHoRM1kg_SnyzKFfDFek" for 127.0.0.1 at 2017-02-16 22:34:03 +0300
-Processing by Devise::ConfirmationsController#show as HTML
-  Parameters: {"confirmation_token"=>"wHoRM1kg_SnyzKFfDFek"}
-  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "wHoRM1kg_SnyzKFfDFek"], ["LIMIT", 1]]
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (4.9ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", 2017-02-16 19:34:03 UTC], ["updated_at", 2017-02-16 19:34:03 UTC], ["id", 1]]
-  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
-Redirected to http://localhost:3000/users/sign_in
-Completed 302 Found in 36ms (ActiveRecord: 6.7ms)
-
-
-Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-16 22:34:03 +0300
-Processing by Devise::SessionsController#new as HTML
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (1.2ms)
-  Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)
-Completed 200 OK in 98ms (Views: 88.3ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/users/sign_in" for 127.0.0.1 at 2017-02-16 22:34:33 +0300
-Processing by Devise::SessionsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9Ft8yzs3HfJ6WISPKtZzZ1PcmqH6ECPfnAobN0/jo1rPDyYVIdpKVqXlUoJRY6z06ljTWyj9lc5uKovN7jIpMg==", "user"=>{"email"=>"petryakov.sasha@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
-  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "petryakov.sasha@gmail.com"], ["LIMIT", 1]]
-Redirected to http://localhost:3000/search
-Completed 302 Found in 212ms (ActiveRecord: 0.5ms)
-
-
-Started GET "/search" for 127.0.0.1 at 2017-02-16 22:34:33 +0300
-Processing by SearchesController#show as HTML
-  Rendering searches/show.html.erb within layouts/application
-  [1m[36mRailwayStation Load (0.3ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations"[0m
-  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations"[0m
-  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  Rendered searches/show.html.erb within layouts/application (8.4ms)
-Completed 200 OK in 97ms (Views: 79.3ms | ActiveRecord: 0.7ms)
-
-
-Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-02-16 22:34:40 +0300
-Processing by Devise::SessionsController#destroy as HTML
-  Parameters: {"authenticity_token"=>"v/xtAARtHHYDsXnfgPVyAUj1OV6GVpd1JwdMXy6dUQcOLETE0YiHnf99ohu99rxT5kCmBgkYfoqrswcFNYx6Sg=="}
-  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
-Redirected to http://localhost:3000/
-Completed 302 Found in 60ms (ActiveRecord: 0.9ms)
-
-
-Started GET "/" for 127.0.0.1 at 2017-02-16 22:34:40 +0300
-Processing by SearchesController#show as HTML
-  Rendering searches/show.html.erb within layouts/application
-  [1m[36mRailwayStation Load (0.3ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations"[0m
-  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations"[0m
-  Rendered searches/show.html.erb within layouts/application (6.8ms)
-Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.3ms)
-
-
-^CExiting
-]0;alexander@alexander-VirtualBox: ~/Ruby_code[01;32malexander@alexander-VirtualBox[00m:[01;34m~/Ruby_code[00m$ git status
-On branch lesson_20
-Your branch is up-to-date with 'origin/lesson_20'.
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	[31mmodified:   config/environments/production.rb[m
-	[31mmodified:   install[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	[31mtmp/letter_opener/1487273633_7b85893/[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;alexander@alexander-VirtualBox: ~/Ruby_code[01;32malexander@alexander-VirtualBox[00m:[01;34m~/Ruby_code[00m$ git add .
-]0;alexander@alexander-VirtualBox: ~/Ruby_code[01;32malexander@alexander-VirtualBox[00m:[01;34m~/Ruby_code[00m$ git push
-Username for 'https://github.com': AlexanderPetryakov
-Password for 'https://AlexanderPetryakov@github.com': 
-Everything up-to-date
-]0;alexander@alexander-VirtualBox: ~/Ruby_code[01;32malexander@alexander-VirtualBox[00m:[01;34m~/Ruby_code[00m$ git pushadd .statusrails servergit push heroku lesson_20:master
-Everythi
