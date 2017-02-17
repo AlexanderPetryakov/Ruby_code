@@ -1,0 +1,34 @@
+<h2><strong><%= t('.maintitle') %></strong></h2>
+
+<p>
+  <strong><%= t('.buyer') %></strong>
+  <%= @ticket.user.email %>
+</p>
+
+<p>
+  <strong><%= t('common.train_number') %></strong>
+  <%= @ticket.train.number %>
+</p>
+
+<p>
+  <strong><%= t('common.dep_st') %></strong>
+  <%= @ticket.departure_station.title %>
+</p>
+
+<p>
+  <strong><%= t('common.arr_st') %></strong>
+  <%= @ticket.arrival_station.title %>
+</p>
+
+<p>
+  <strong><%= t('common.pass_name') %></strong>
+  <%= @ticket.passenger_name %>
+</p>
+
+<p>
+  <strong><%= t('common.pass_number') %></strong>
+  <%= @ticket.passport_number %>
+</p>
+
+
+<%= link_to t('common.back'), admin_tickets_path %>
