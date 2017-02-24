@@ -1,32 +1,32 @@
 <%= form_for [:admin, @train, @wagon] do |f| %>
   <!--<%=render 'common/errors', resourse: @wagon %>-->
 
-  <div class="field">
-    <%= f.label :type, "Тип вагона" %>
-    <%= f.select :type, Wagon::TYPES %>
+  <div class="field_1">
+    <%= f.label :type, "Тип вагона" %> 
+    <%= f.select :type, Wagon::TYPES, {include_blank: ''} %>
   </div>
 
-  <div class="field">
+  <div class="field", id="bs", style="display:none">
     <%= f.label :bottom_seats, "Количество нижних мест" %>
     <%= f.text_field :bottom_seats %>
   </div>
 
-  <div class="field">
+  <div class="field", id="ts", style="display:none">
     <%= f.label :top_seats, "Количество верхних мест" %>
     <%= f.text_field :top_seats %>
   </div>
 
-  <div class="field">
+  <div class="field", id="sbs", style="display:none">
     <%= f.label :side_bottom_seats, "Количество нижних боковых мест" %>
     <%= f.text_field :side_bottom_seats %>
   </div>
 
-  <div class="field">
+  <div class="field", id="sts", style="display:none">
     <%= f.label :side_top_seats, "Количество верхних боковых мест" %>
     <%= f.text_field :side_top_seats %>
   </div>
 
-  <div class="field">
+  <div class="field", id="ss", style="display:none">
     <%= f.label :sitting_seats, "Количество сидячих мест" %>
     <%= f.text_field :sitting_seats %>
   </div>
